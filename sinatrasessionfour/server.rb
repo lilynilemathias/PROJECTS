@@ -44,6 +44,12 @@ get '/:createaname' do
 	erb :createaname	
 end
 
+#the user types into the url bar, makes a get request to the server,
+#server looks for a route matching get /lily finds get/:createname', which matches
+#because :createname is flexible. params[:createname] is equal to whatever got typed in the /:createname slot in the url, in this case, Lily.
+
+#the instance variable that you made called @name is set equal to whatever 
+#params[:createaname] is, in this case Lily. So now the computer knows @name is equal to Lily.
 
 
 
