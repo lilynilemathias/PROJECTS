@@ -1,0 +1,15 @@
+1. The WDI program should be 16 weeks instead of 12 weeks.
+  The extra four weeks would allow for a more reasonable pace and give some
+  students who are very new to programming a chance to stay on track and learn at their pace.
+
+2. Solutions for homework should be posted the following day.
+Even if there is no time to review them during class it would be helpful
+to have them in the class github repo so the students could review independently and
+prepare questions. Sometimes people don't ask questions because they don't know what
+answers to ask.
+
+3. On the first day of class, have readme.md in the class github repo on
+students tips and best practices for approaching the homework.
+
+4. I think the smaller breakout classes are amazing! Please
+keep those up as much as possible.

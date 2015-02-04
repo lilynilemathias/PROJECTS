@@ -1,0 +1,28 @@
+body {
+	/*background-color: goldenrod;*/
+	text-align: center;	
+	background-image: url("http://image-cdn.zap2it.com/photogallery/images/zap-reign-season-2-cast-photos-20140924-008");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: mistyrose;
+}	
+
+h1 {
+	font-size: 4em;
+	font-family: cursive;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+li {
+	font-size: 3em;
+}
+
+a {
+	font-size: 3em;
+	color: antiquewhite;
+}
+
+
