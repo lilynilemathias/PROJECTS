@@ -1,0 +1,17 @@
+body {
+	text-align: center;
+	background-image: url(http://ffaasstt.swide.com/wp-content/uploads/best-vampire-tv-series-ever-list-vampire-diaries.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+h1 {
+	font-size: 5em;
+	font-family: Verdana;
+
+}
+
+ul {
+	list-style position:inside;
+}

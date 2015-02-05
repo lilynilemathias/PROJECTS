@@ -1,9 +1,5 @@
-Elena Gilbert
-Stephen Salvatore
-Damon Salvatore
-Bonnie 
-Carolyn
-Jeremy
-Nicklaus
-Tyler
-Katherine
+Elena
+Stephan
+Damon
+
+	
