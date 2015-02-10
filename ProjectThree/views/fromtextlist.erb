@@ -1,0 +1,18 @@
+<h1>List of Characters</h1>
+<ul>
+<!-- iterating through list -->
+<% @characters.each do |character| %>
+	<li>
+		<%= character %>
+	</li>
+<% end %>
+<!-- why do we put the end?ask dave -->
+</ul>
+
+<form action="/persist" method="POST"> 
+	<label for="newcharactername">Enter A Character</label>
+	<br>
+	<input type="text" name="newcharactername">
+	<br>
+	<input type="submit" value="click here">
+</form>

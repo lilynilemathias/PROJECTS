@@ -1,0 +1,15 @@
+<h1>REIGN</h1>
+<ul>
+	<% @main_characters.each do |character|  %>
+		<li>
+			<!-- this makes each character name clickable, and now you can make a character and it is linked to their own personal bio page -->
+		<a href="/maincharacters/<%= character.id %>"><%= character.name %></a>
+		</li>
+	<% end %>
+</ul>
+
+<a href="/countries">The Countries of Reign Royalty </a>
+<br>
+<a href="/supportingcharacters">The Supporting Cast of Reign</a>
+<br>
+<a href="/maincharacters/new">Create A Royal</a>
