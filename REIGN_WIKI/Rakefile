@@ -1,0 +1,22 @@
+require 'bundler'
+Bundler.require
+require './connection.rb'
+require 'sinatra/activerecord/rake'
+
+namespace :db do
+	#this is where the rake tast are written, looks like a ruby method :)
+	desc "create database for reign" 
+	task :create_db do
+		conn = PG::Connection.open()
+		#'conn' is a variable name	
+		conn.exec("CREATE DATABASE reign;")
+		conn.close
+	end
+
+	desc "drop reign database"
+	task :drop_db do
+		conn = PG::Connection.open()
+		conn.exec("DROP DATABASE reign;")
+		conn.close
+	end	
+end

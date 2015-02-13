@@ -1,0 +1,81 @@
+<!-- #this is where the form goes -->
+<h1>Create A New Royal</h1>
+<form action="/maincharacters" method="POST">
+	<label for="name">Name</label>
+	<br>
+	<input type="text" name="name">
+	<!-- each input tag, find the name 'attribute'
+ and what ever the name attribute of the input tag is equal to its going to set that as a key in its params hash; an input tag has two attributes that are
+ the 'type' attribute and the 'name'attribute will determine what ever is going to be a key in the params hash that is made	 -->
+ 	 <br>
+	<label for="country">Country</label>
+	<br>
+	<input type="text" name="country">
+	<br>
+	<label for="bio">Bio</label>
+	<br>
+	<input type="text" name="bio">
+	<br>
+	<label for="pic">Picture</label>
+	<br>
+	<input type="text" name="pic">
+	<br>
+	<input type="submit">
+</form>
+
+<a href="/">Home</a>
+
+<!-- 
+When you go to my page, you wil see a form to create a new royal.
+
+STEP 1. MAKES A HASH 
+the form creates a hash named 'params'
+
+STEP 1A. HOW THE HASH WORKS  
+The new hash has key-value pairs; the form understands what the KEYS are: name/bio/pic/country because it knows to look at the name-attribute of the input tag and the VALUES: what is entered specifically.
+
+
+STEP 2A. AN HTTP REQUEST IS MADE
+It makes the request to the route specified in the form (post '/maincharacters')
+in the form tag at top of the html form. 
+
+ STEP 3. CONNECTS TO THE SERVER
+ The server receives the http request and receives the info as a hash called PARAMS! The job of the post request is to persist the data to the DB.
+
+STEP 4. PERSIST TO THE DATABASE
+The post request  triggers an action analagous to writing a 
+MainCharaters.create() method in PRY, because I wrote that that method in my server.rb file to make that happen.
+
+
+STEP 5. 
+In order to make another get request you have to use Sinatara shorthand and 
+write redirect '/whatever route'
+
+
+STEP 6.
+The server then receives this new http request(get). The servers sees the new request and it knows the type and direction because thats in the server.rb file.
+
+STEP 7.
+The method within the route is how we can see all the contents of my main_characters table in my Reign database.
+
+STEP 8.
+The server reads the info from the Maincharacters.all as an array. 
+It order for the erb to read the info, the info needs to be translated into an instance variable, @main_characters so the ERB will know how to read the info and execute it. The instance variable can be named anything that you want.
+
+STEP 9.
+The erb :index refers to the views/index.erb. The server takes the information inside the instance variable and tosses it over to the ERB and the ERB says "wow information. I love information. whats this info about."
+
+STEP 10.
+Dear ERB
+Someone called on you to show some stuff and gave you an instance variable too!
+
+STEP 11.
+The index.erb is an HTML file but it can also do ruby stuff.
+It uses special delimiters called 'squids' <%= %> so this means it will do ruby stuff and also print/show up on the page.
+<% %> this means it will be read as just ruby code. 
+#################################################################
+Someone hits submit on your form!
+The form will create a hash, called "params."  It will fill this hash with keys and values.  It will search for input tags that have 'name' attributes, and for each one that it finds, the form will make a key in its params hash, of whatever that name attribute is equal to.  So if the form finds an input tag that says name="occupation", then the form will include in its params hash a key of "occupation."
+
+For the values, the form will use whatever the user has entered for each particular input tag.  So, if the input tag with the name attribute of 'occupation' is a text box and the user has entered "lumberjack", then, the form will add to its params hash:  {occupation: "lumberjack."}
+ -->
