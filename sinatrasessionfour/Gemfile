@@ -1,9 +1,0 @@
-source 'http://www.rubygems.org'
-
-gem 'sinatra'
-gem 'pry'
-gem 'sinatra-reloader'
-gem 'pg'
-gem 'sinatra-activerecord'
-
-#review how to build a gemfile :)#
