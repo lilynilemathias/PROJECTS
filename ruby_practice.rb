@@ -1,6 +1,3 @@
-https://github.com/ga-students/Princess_Zelda/blob/master/w02/d01/Instructors/objects.rb
-
-
 flowers = ["roses", "daisies"]
 
 to_dos = []
@@ -160,7 +157,6 @@ class Cat
 	name_argument = this is flexible, whatever you enter into this space when you make a new instance of a Cat, will automatically become the name_argument for that cat.  Cat("salem", etc.)
 
 	@name_instance_variable = this is the cat's inner-self name.  It is the name that the cat will carry around for its whole life.
-
 	name_method = this is a method, just like .push or .pop or whatever, and if you call it on any particular cat, it will do something that in this case access the cat's name_instance_variable
 
 	YOU MAKE A NEW CAT.
@@ -258,4 +254,3 @@ todos["making cookies"] = 3
 
 Delete something from your hash:
 todos.delete("making cookies")
-

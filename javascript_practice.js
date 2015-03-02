@@ -29,7 +29,7 @@ for (var counter = 0; counter < 10; counter++) {
 //1:
 
 function doSomething(){
-	alert("I did sumthin");
+	alert("I did something.");
 };
 
 //2:
